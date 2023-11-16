@@ -1,21 +1,20 @@
 /** @type {import('tailwindcss').Config} */
+import daisyui from "daisyui";
+
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        "primary": "#FC5986",
-        "secondary": "#FAF6F5",
-        "tertiary": "#E2D7D5",
-        "quaternary": "#CFC2BF",
+        primary: "#FC5986",
+        secondary: "#FAF6F5",
+        tertiary: "#E2D7D5",
+        quaternary: "#CFC2BF",
       },
     },
   },
-  plugins: [],
-}
+  plugins: [daisyui],
+};
