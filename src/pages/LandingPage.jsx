@@ -1,11 +1,14 @@
 import Footer from "../components/Footer";
+import About from "../components/LandingComponent/About";
+import Desc from "../components/LandingComponent/Desc";
+import Feature from "../components/LandingComponent/Feature";
 
 const LandingPage = () => {
   return (
     <>
-      <div>
-        <h1>Landing Page</h1>
-      </div>
+      <Desc />
+      <About />
+      <Feature />
       <Footer />
     </>
   );
