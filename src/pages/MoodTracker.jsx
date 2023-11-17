@@ -194,23 +194,25 @@ const MoodTracker = () => {
   const [emotActive, setEmotActive] = useState("none");
 
   return (
-    <div className="cust-outer-container relative lg:h-screen">
-      <div className="hidden lg:block absolute bg-quaternary bottom-0 z-0 w-full h-60"></div>
-      <div className="cust-container lg:h-full pt-28 z-20">
-        <div className="w-full flex justify-between items-center">
-          <h1 className="text-3xl md:text-5xl font-bold">Halo Irham!</h1>
-          <div className="hidden lg:block drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] ">
-            <img
-              className="w-24 h-24"
-              src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1700105663/Rectangle_384_mdcubr.png"
-              alt="profile"
-            />
+    <>
+      <div className="cust-outer-container relative lg:h-screen">
+        <div className="hidden lg:block absolute bg-quaternary bottom-0 z-0 w-full h-60"></div>
+        <div className="cust-container lg:h-full pt-28 z-20">
+          <div className="w-full flex justify-between items-center">
+            <h1 className="text-3xl md:text-5xl font-bold">Halo Irham!</h1>
+            <div className="hidden lg:block drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] ">
+              <img
+                className="w-24 h-24"
+                src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1700105663/Rectangle_384_mdcubr.png"
+                alt="profile"
+              />
+            </div>
           </div>
+          <DisplayPC emotActive={emotActive} setEmotActive={setEmotActive} />
         </div>
-        <DisplayPC emotActive={emotActive} setEmotActive={setEmotActive} />
+        <DisplayMobile emotActive={emotActive} setEmotActive={setEmotActive} />
       </div>
-      <DisplayMobile emotActive={emotActive} setEmotActive={setEmotActive} />
-    </div>
+    </>
   );
 };
 
