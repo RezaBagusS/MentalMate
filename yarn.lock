@@ -859,10 +859,10 @@ culori@^3:
   resolved "https://registry.yarnpkg.com/culori/-/culori-3.2.0.tgz#df6561503f0cc20e8e1c029f086466666c0ac62f"
   integrity sha512-HIEbTSP7vs1mPq/2P9In6QyFE0Tkpevh0k9a+FkjhD+cwsYm9WRSbn4uMdW9O0yXlNYC3ppxL3gWWPOcvEl57w==
 
-daisyui@^4.0.9:
-  version "4.0.9"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-4.0.9.tgz#0e44e8dd9ff194ac5da10a8d1c4339c96da96a64"
-  integrity sha512-x9E1UL/gF4ZWOAJaMKOw3Ji9WmNZA0Tok/knRzzJWu9KJu+7kOHREqlhpvnP9Qz/4EOTu0ep9akquQnbeldYYQ==
+daisyui@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-4.3.1.tgz#2d25b9538cc34b79b3f9478bfc2a1547235ba472"
+  integrity sha512-dCi91VD+57lkoBd10CjdW4wPOeOPYvvzQbxti6xmyQbDMbCeCXwNq2KdoU798I4OsCcD5B+n7yVG7HAgYW+cvw==
   dependencies:
     css-selector-tokenizer "^0.8"
     culori "^3"
@@ -2538,11 +2538,6 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
-
-use-react-countries@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/use-react-countries/-/use-react-countries-0.0.1.tgz#558b02d8e3c6f037b1c195b5671f3ebd8bee4d8b"
-  integrity sha512-0xJnOzLx/7Gw0ZLXl7PjzTh9zEMJUMphlT63GyupYurdhYsdQXTkxKTiAPRvyU1mNyFbh7KofHvGnI4zHdllYg==
 
 util-deprecate@^1.0.2:
   version "1.0.2"
