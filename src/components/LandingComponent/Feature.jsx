@@ -30,7 +30,7 @@ const Feature = () => {
   return (
     <>
       <div className="lg:h-screen font-poppins sm:px-0 px-4">
-        <div className="lg:py-16 lg:pt-0 lg:pb-0 pt-16 pb-4 text-5xl w-fit mx-auto font-medium">
+        <div className="lg:py-16 lg:pt-10 lg:pb-10 pt-16 pb-4 text-5xl w-fit mx-auto font-medium">
           Features
         </div>
         <div className="flex flex-wrap">

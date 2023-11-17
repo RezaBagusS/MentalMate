@@ -7,7 +7,7 @@ import google_icon from "../assets/google_icon.svg";
 const Login = () => {
   return (
     <div className="font-poppins w-full lg:flex pt-28">
-      <div className="lg:w-7/12 w-full">
+      <div className="lg:w-7/12 w-full xl:ml-10">
         <div className="lg:grid flex lg:w-11/12 xl:ml-auto sm:ml-10 mx-auto ">
           <div className="w-6/12 lg:w-full hidden sm:block">
             <div className="w-10/12 text-left font-bold lg:text-5xl text-4xl">
