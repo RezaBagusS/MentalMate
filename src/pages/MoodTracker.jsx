@@ -83,7 +83,7 @@ const DisplayPC = ({ emotActive, setEmotActive }) => {
                 <input
                   type="text"
                   placeholder="Isi Yuk! 🤗."
-                  className="w-full z-20 text-gray-600 bg-secondary rounded-lg px-4 py-3 active:outline-none focus:outline-none"
+                  className="w-full z-20 text-gray-600 rounded-lg px-4 py-3 active:outline-none focus:outline-none"
                 />
                 <img
                   src={polygon}
@@ -107,7 +107,7 @@ const DisplayPC = ({ emotActive, setEmotActive }) => {
           </p>
         </div>
         <textarea
-          className="bg-secondary p-4 h-3/5 text-gray-600 rounded-lg text-lg font-semibold resize-none active:outline-none focus:outline-none w-full drop-shadow-[0px_4px_15px_rgba(0,0,0,0.1)]"
+          className="bg-white p-4 h-3/5 text-gray-600 rounded-lg text-lg font-semibold resize-none active:outline-none focus:outline-none w-full drop-shadow-[0px_4px_15px_rgba(0,0,0,0.1)]"
           placeholder="Isi Yuk! 🤗."
         ></textarea>
       </div>
@@ -117,7 +117,7 @@ const DisplayPC = ({ emotActive, setEmotActive }) => {
 
 const DisplayMobile = ({ emotActive, setEmotActive }) => {
   return (
-    <div className="lg:hidden pt-10 mt-10">
+    <div className="pt-10 mt-10">
       <div className="w-full pt-10">
         <div className="relative bg-primary rounded-t-3xl flex flex-col gap-10 pt-32 px-2 md:px-10 pb-10 ">
           <div className="absolute right-1/2 translate-x-1/2 -top-1/2 translate-y-1/2 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] ">
@@ -171,7 +171,7 @@ const DisplayMobile = ({ emotActive, setEmotActive }) => {
                 <input
                   type="text"
                   placeholder="Isi Yuk! 🤗."
-                  className="w-full z-20 text-gray-600 bg-secondary rounded-lg text-xs md:text-base md:px-4 px-2 md:py-3 py-2 active:outline-none focus:outline-none"
+                  className="w-full z-20 text-gray-600 rounded-lg text-xs md:text-base md:px-4 px-2 md:py-3 py-2 active:outline-none focus:outline-none"
                 />
                 <img
                   src={polygon}
@@ -194,25 +194,23 @@ const MoodTracker = () => {
   const [emotActive, setEmotActive] = useState("none");
 
   return (
-    <>
-      <div className="cust-outer-container relative lg:h-screen">
-        <div className="hidden lg:block absolute bg-quaternary bottom-0 z-0 w-full h-60"></div>
-        <div className="cust-container lg:h-full pt-28 z-20">
-          <div className="w-full flex justify-between items-center">
-            <h1 className="text-3xl md:text-5xl font-bold">Halo Irham!</h1>
-            <div className="hidden lg:block drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] ">
-              <img
-                className="w-24 h-24"
-                src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1700105663/Rectangle_384_mdcubr.png"
-                alt="profile"
-              />
-            </div>
+    <div className="cust-outer-container relative lg:h-screen">
+      <div className="hidden lg:block absolute bg-quaternary bottom-0 z-0 w-full h-60"></div>
+      <div className="cust-container lg:h-full pt-28 z-20">
+        <div className="w-full flex justify-between items-center">
+          <h1 className="text-3xl md:text-5xl font-bold">Halo Irham!</h1>
+          <div className="hidden lg:block drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] ">
+            <img
+              className="w-24 h-24"
+              src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1700105663/Rectangle_384_mdcubr.png"
+              alt="profile"
+            />
           </div>
-          <DisplayPC emotActive={emotActive} setEmotActive={setEmotActive} />
         </div>
-        <DisplayMobile emotActive={emotActive} setEmotActive={setEmotActive} />
+        <DisplayPC emotActive={emotActive} setEmotActive={setEmotActive} />
       </div>
-    </>
+      <DisplayMobile emotActive={emotActive} setEmotActive={setEmotActive} />
+    </div>
   );
 };
 
